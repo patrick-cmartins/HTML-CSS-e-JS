@@ -1,0 +1,15 @@
+/*function verificar() {
+    //var ntab = document.getElementById('tab')
+    //var vntab = 5
+    var res = document.querySelector('div#res')
+    while(5 <= 50) {
+        5*1
+        5++
+    }
+}
+*/
+var s = 5
+while(s <= s*10) {
+    console.log(s*1)
+    s++
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de brasileiros</title>
+</head>
+<body>
+    <h1>Seletor de brasileiros</h1>
+    DIGITE SEU PAÍS
+    <input type="string" name="pais" id="pais">
+    <input type="button" value="consultar" onclick='consultar()'> 
+    <div id="res">
+
+    </div>
+    <script>  
+        function consultar() {
+            var paisv = window.document.getElementById("pais")
+            var paiss = String(paisv.value)
+            var res = window.document.getElementById("res")
+           //res.innerText = `Seu País é ${paiss}`
+           if (paiss == 'brasil') {
+                res.innerHTML = "Você não é um estrangeiro. Seja bem vindo!"
+            } else {
+                res.innerHTML = "Vai a merda estrangeiro de <strong>BOSTA</strong>"
+            }
+        }
+    </script>
+</body>
+</html>
